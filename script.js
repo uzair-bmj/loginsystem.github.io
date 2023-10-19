@@ -2,7 +2,7 @@ let users = []
 function signup(){
    let nam = document.getElementById("name").value;
     let em = document.getElementById("Email").value;
-    let pss = document.getElementById("pass").value
+    let pss = document.getElementById("pass").value;
     
     
     users.push({
@@ -12,8 +12,9 @@ function signup(){
     }
         
     )
-    document.getElementById("alert").innerText = "User Registered Succesfully"
+    
     console.log(users)
+    window.alert("User Registered Successfully")
 }
 function login(){
     let email = document.getElementById("email").value;
@@ -21,10 +22,10 @@ function login(){
 
     for(let i=0; i<users.length; i++){
         if(email==users[i].email && pass== users[i].password){
-            document.getElementById("alert").innerText = "Login Succesfull"
+            window.alert("Login Successfull")
         }
         else{
-            document.getElementById("alert").innerText = "INVALID EMAIL OR PASSWORD"
+            window.alert("Invalid Email or password")
         }
 
 
