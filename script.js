@@ -12,7 +12,7 @@ function signup(){
     }
         
     )
-    alert("User Registered Succesfully")
+    document.getElementById("alert").innerText = "User Registered Succesfully"
     console.log(users)
 }
 function login(){
@@ -21,10 +21,10 @@ function login(){
 
     for(let i=0; i<users.length; i++){
         if(email==users[i].email && pass== users[i].password){
-            window.alert("login Successfull")
+            document.getElementById("alert").innerText = "Login Succesfull"
         }
         else{
-            window.alert("INVALID EMAIL OR PASSWORD")
+            document.getElementById("alert").innerText = "INVALID EMAIL OR PASSWORD"
         }
 
 
