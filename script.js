@@ -1,5 +1,5 @@
 let users = []
-function Signup(){
+function sinup(){
    let nam = document.getElementById("name").value;
     let em = document.getElementById("Email").value;
     let pss = document.getElementById("pass").value;
